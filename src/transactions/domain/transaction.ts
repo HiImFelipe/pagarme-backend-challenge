@@ -10,6 +10,8 @@ import { v4 as uuidv4 } from "uuid";
 
 export class Transaction {
   public readonly id: string;
+  public readonly createdAt: Date;
+
   public readonly amount: number;
   public readonly description: string;
   public readonly date: Date;
@@ -44,6 +46,8 @@ export class Transaction {
     }
 
     this.id = uuidv4();
+    this.createdAt = new Date();
+
     this.amount = amount;
     this.description = description;
     this.date = date;
