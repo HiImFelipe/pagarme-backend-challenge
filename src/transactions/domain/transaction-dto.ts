@@ -1,6 +1,6 @@
-import { Card } from "../../card/card";
+import { Card } from "../../card/domain/card";
 
-export enum PaymentMethod {
+export enum TransactionPaymentMethod {
   CREDIT = "credit",
   DEBIT = "debit",
 }
@@ -17,6 +17,6 @@ export type TransactionDTO = {
   amount: number;
   description: string;
   date: Date;
-  paymentMethod: PaymentMethod;
+  paymentMethod: TransactionPaymentMethod;
   card: Card;
 };

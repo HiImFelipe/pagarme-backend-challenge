@@ -1,7 +1,7 @@
-import { CardDTO } from "../../card/card-dto";
-import { Card } from "../../card/card";
+import { CardDTO } from "../../card/domain/card-dto";
+import { Card } from "../../card/domain/card";
 import {
-  PaymentMethod,
+  TransactionPaymentMethod as PaymentMethod,
   TransactionDTO,
   TransactionErrorMessages,
 } from "./transaction-dto";

@@ -1,6 +1,9 @@
-import { PaymentMethod, TransactionErrorMessages } from "./transaction-dto";
+import {
+  TransactionPaymentMethod as PaymentMethod,
+  TransactionErrorMessages,
+} from "./transaction-dto";
 import { Transaction } from "./transaction";
-import { Card } from "../../card/card";
+import { Card } from "../../card/domain/card";
 
 describe("Transaction", () => {
   let card: Card;
