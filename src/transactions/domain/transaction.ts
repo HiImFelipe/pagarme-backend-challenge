@@ -27,8 +27,6 @@ export class Transaction {
       throw new Error(TransactionErrorMessages.INVALID_AMOUNT);
     }
 
-    console.log(card.expirationDate.toISOString(), date.toISOString());
-
     if (card.expirationDate < date) {
       throw new Error(TransactionErrorMessages.CARD_EXPIRED);
     }
