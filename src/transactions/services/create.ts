@@ -1,4 +1,4 @@
-import { ServiceModule } from "../../contracts/service-module";
+import { ServiceModule } from "../../common/contracts/service-module";
 import { Payable, PayablePaymentMethod } from "../../payable/domain";
 import { Transaction, TransactionDTO } from "../domain/index";
 import { TransactionRepository } from "../infra/index";

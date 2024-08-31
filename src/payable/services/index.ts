@@ -1,4 +1,4 @@
-import { ServiceModule } from "../../contracts/service-module";
+import { ServiceModule } from "../../common/contracts/service-module";
 import { Payable } from "../domain";
 import {
   CreatePayableRequest,
