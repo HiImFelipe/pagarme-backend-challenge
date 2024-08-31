@@ -5,9 +5,21 @@ export enum PayablePaymentMethod {
 
 export type PayableDTO = {
   amount: number;
-  status: string;
+  transactionDate: Date;
+  paymentMethod: PayablePaymentMethod;
+};
+
+export type PayableJSON = {
+  id: string;
+  createdAt: Date;
+  updatedAt: Date;
+  grossAmount: number;
+  netAmount: number;
   paymentDate: Date;
   paymentMethod: PayablePaymentMethod;
+  feePercentage: number;
+  transactionDate: Date;
+  status: PayableStatus;
 };
 
 export enum PayableStatus {
