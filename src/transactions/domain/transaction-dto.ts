@@ -1,4 +1,4 @@
-import { Card } from "../../card/domain/card";
+import { CardDTO } from "../../card/domain/card-dto";
 
 export enum TransactionPaymentMethod {
   CREDIT = "credit",
@@ -18,5 +18,5 @@ export type TransactionDTO = {
   description: string;
   date: Date;
   paymentMethod: TransactionPaymentMethod;
-  card: Card;
+  card: CardDTO;
 };
